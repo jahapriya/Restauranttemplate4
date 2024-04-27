@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 768px) {
+  .left {
+    font-size: 10px !important;
+  }
+  .mobileview {
+    width: 100% !important;
+  }
+  .background {
+    background-color: #6ca00f;
+    max-width: 85vw !important;
+    height: 200vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10% !important;
+  }
+  .container {
+    background-color: #201c1b;
+    padding: 20px;
+    width: 80%;
+    height: 95% !important;
+  }
+  .right {
+    width: 50%;
+    margin-top: 60% !important;
+  }
+  .overlay1 {
+    position: absolute;
+    bottom: 80% !important;
+    left: 45%;
+    z-index: 1;
+    color: aliceblue;
+  }
+  .sedan-regular-italic {
+    font-size: 35px !important;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #e57837;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.background {
+  background-color: #6ca00f;
+  max-width: 70vw;
+  height: 157vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-left: 15%;
+}
+.email {
+  width: 135px;
+  background-color: #e57837;
+  border: 1px solid #e57837;
+  border-radius: 30px;
+}
+
+.container {
+  background-color: #201c1b;
+  padding: 20px;
+  width: 80%;
+  height: 85%;
+}
+
+.menu {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.special {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  padding: 20px;
+}
+
+.right {
+  width: 50%;
+  margin-top: 7%;
+}
+.sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+.submenu {
+  font-size: 30px;
+}
+.overlay {
+  position: absolute;
+  bottom: 70%;
+  left: 50%;
+  z-index: 1;
+}
+.overlay1 {
+  position: absolute;
+  bottom: 76%;
+  left: 45%;
+  z-index: 1;
+  color: aliceblue;
+}
+
+.sedan-regular-italic {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #e57837;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+  color: white;
+  margin-left: 28%;
+}
+
+h3,
+h4 {
+  margin-bottom: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p,
+li {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
